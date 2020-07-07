@@ -11,7 +11,7 @@ function setup() {
   particles = []
   canvasy = 800
   createCanvas(canvasx,canvasy);
-  Particle1 = new Plinko(200,200)
+  //Particle1 = new Plinko(200,200)
   ground = new Ground(canvasx/2,canvasy-10, width, 30, "white")
   divisionHeight = 300
   for(var k = 10; k <= width; k = k + 80){
@@ -39,7 +39,7 @@ function setup() {
 function draw() {
   Engine.update(engine);
   background("black");
-  Particle1.display();
+  //Particle1.display();
   ground.display();
   
 
